@@ -1,0 +1,67 @@
+Configurar o hardware.
+
+Inicio Laço principal:
+
+-Verifico se passou 1 segundo:
+  Ler I/O da base de tempo.
+     Leio endereço da base de tempo e verifico se tem conteúdo "1"
+  Caso sim:
+    Limpo o I/O da base de tempo.
+    Incrementar o contador de segundo e fazer o transbordo:
+      - Leio a variavel de unidade de segundos
+      - somo 1 a ela.
+      - Verifico se passou do limite (10 segundos)
+          Caso sim:
+            escrevo 0 nessa variavel e incremento dezena de segundos
+            verifico se passou do limite (6 dezenas de segundos)
+              Acerto unidade de horas
+              Acerto dezena de horas.
+          caso não:
+            Continuo no laço principal (continuação 1).
+      Bla bla bla
+      Bla bla bla
+  Caso não:
+    Continuo no laço principal.
+    
+Continuação 1:
+-Ler chaves:
+  Ler I/O chaves e verificar se há alguma alteração.
+  Caso sim:
+    Qual a função dessa chave?
+      Configurar hora?
+        Caso sim:
+          Bla bla bla
+          volta para o laço principal.
+
+      Configurar minuto?
+        Caso sim:
+        
+        Caso não:
+                
+      
+      Configurar alarme?
+        Caso sim:
+        
+        Caso não:
+                
+    
+  Caso não:
+    Continuo no laço principal (Continuação 2)
+
+Continuação 2:
+Volta para o inicio do laço principal (jump absoluto).
+
+
+Instruções:
+
+Leitura 
+
+Escrita
+
+Comparação
+
+Desvio se comparação igual
+
+Desvio absoluto (jump)
+
+

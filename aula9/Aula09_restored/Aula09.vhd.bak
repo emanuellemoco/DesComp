@@ -1,0 +1,52 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity Aula09 is
+  generic   (
+    DATA_WIDTH  : natural :=  8;
+    ADDR_WIDTH  : natural :=  8;
+	 ROM_ADDR_WIDTH : natural := 10
+  );
+
+  port   (
+    -- Input ports
+    --dataIN  :  in  std_logic_vector(DATA_WIDTH-1 downto 0);
+    --enable  : in  std_logic;
+    CLOCK_50     : in  std_logic;
+    --<name>  : in  <type> := <default_value>;
+
+    -- Inout ports
+    --<name>  : inout <type>;
+
+    -- Output ports
+    dataOUT :  out  std_logic_vector(DATA_WIDTH-1 downto 0)
+    --<name>  : out <type> := <default_value>
+  );
+end entity;
+
+
+architecture arch_name of Aula09 is
+  signal selMUXProxPC : std_logic;
+  signal PC_EnderecoROM : std_logic_vector(ROM_ADDR_WIDTH-1 downto 0);
+  -- constant FUNCT_WIDTH : natural := 6;
+
+
+begin
+
+  -- Para instanciar, a atribuição de sinais (e generics) segue a ordem: (nomeSinalArquivoDefinicaoComponente => nomeSinalNesteArquivo)
+	PC : entity work.registradorGenerico   generic map (larguraDados => VALOR_LOCAL)
+          port map (DIN => sinalLocal, DOUT => PC_EnderecoROM, ENABLE => sinalLocal, CLK => sinalLocal, RST => sinalLocal);
+			 
+	muxProxPC :  entity work.muxGenerico2x1  generic map (larguraDados => VALOR_LOCAL)
+        port map( entradaA_MUX => sinalLocal,
+                 entradaB_MUX =>  sinalLocal,
+                 seletor_MUX => selMUXProxPC,
+                 saida_MUX => sinalLocal);
+	somadorProxPC :  entity work.somaConstante  generic map (larguraDados => VALOR_LOCAL, constante => VALOR_LOCAL)
+        port map( entrada => PC_EnderecoROM, saida => sinalLocal);
+					  
+	memoriaInstrucoes : entity work.memoriaROM   generic map (dataWidth => VALOR_LOCAL, addrWidth => ROM_ADDR_WIDTH)
+          port map (Endereco => PC_EnderecoROM, Dado => sinalLocal);
+	
+end architecture;

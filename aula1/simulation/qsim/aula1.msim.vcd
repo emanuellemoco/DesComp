@@ -1,0 +1,224 @@
+$comment
+	File created using the following command:
+		vcd file aula1.msim.vcd -direction
+$end
+$date
+	Tue Aug 25 20:41:12 2020
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module aula1_vhd_vec_tst $end
+$var wire 1 ! saida [3] $end
+$var wire 1 " saida [2] $end
+$var wire 1 # saida [1] $end
+$var wire 1 $ saida [0] $end
+$var wire 1 % x [3] $end
+$var wire 1 & x [2] $end
+$var wire 1 ' x [1] $end
+$var wire 1 ( x [0] $end
+$var wire 1 ) y [3] $end
+$var wire 1 * y [2] $end
+$var wire 1 + y [1] $end
+$var wire 1 , y [0] $end
+
+$scope module i1 $end
+$var wire 1 - gnd $end
+$var wire 1 . vcc $end
+$var wire 1 / unknown $end
+$var wire 1 0 devoe $end
+$var wire 1 1 devclrn $end
+$var wire 1 2 devpor $end
+$var wire 1 3 ww_devoe $end
+$var wire 1 4 ww_devclrn $end
+$var wire 1 5 ww_devpor $end
+$var wire 1 6 ww_x [3] $end
+$var wire 1 7 ww_x [2] $end
+$var wire 1 8 ww_x [1] $end
+$var wire 1 9 ww_x [0] $end
+$var wire 1 : ww_y [3] $end
+$var wire 1 ; ww_y [2] $end
+$var wire 1 < ww_y [1] $end
+$var wire 1 = ww_y [0] $end
+$var wire 1 > ww_saida [3] $end
+$var wire 1 ? ww_saida [2] $end
+$var wire 1 @ ww_saida [1] $end
+$var wire 1 A ww_saida [0] $end
+$var wire 1 B \x[3]~input_o\ $end
+$var wire 1 C \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 D \y[0]~input_o\ $end
+$var wire 1 E \y[1]~input_o\ $end
+$var wire 1 F \x[0]~input_o\ $end
+$var wire 1 G \subtrator2x3y|Add0~1_sumout\ $end
+$var wire 1 H \y[2]~input_o\ $end
+$var wire 1 I \somador3y|Add0~0_combout\ $end
+$var wire 1 J \x[1]~input_o\ $end
+$var wire 1 K \subtrator2x3y|Add0~2\ $end
+$var wire 1 L \subtrator2x3y|Add0~5_sumout\ $end
+$var wire 1 M \x[2]~input_o\ $end
+$var wire 1 N \y[3]~input_o\ $end
+$var wire 1 O \somador3y|Add0~1_combout\ $end
+$var wire 1 P \subtrator2x3y|Add0~6\ $end
+$var wire 1 Q \subtrator2x3y|Add0~9_sumout\ $end
+$var wire 1 R \ALT_INV_x[2]~input_o\ $end
+$var wire 1 S \ALT_INV_y[3]~input_o\ $end
+$var wire 1 T \ALT_INV_x[1]~input_o\ $end
+$var wire 1 U \ALT_INV_y[2]~input_o\ $end
+$var wire 1 V \ALT_INV_x[0]~input_o\ $end
+$var wire 1 W \ALT_INV_y[1]~input_o\ $end
+$var wire 1 X \ALT_INV_y[0]~input_o\ $end
+$var wire 1 Y \somador3y|ALT_INV_Add0~1_combout\ $end
+$var wire 1 Z \somador3y|ALT_INV_Add0~0_combout\ $end
+$var wire 1 [ \subtrator2x3y|ALT_INV_Add0~9_sumout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0-
+1.
+x/
+10
+11
+12
+13
+14
+15
+0B
+xC
+1D
+1E
+1F
+0G
+0H
+0I
+0J
+1K
+0L
+0M
+0N
+1O
+1P
+1Q
+1R
+1S
+1T
+1U
+0V
+0W
+0X
+0Y
+1Z
+0[
+0%
+0&
+0'
+1(
+0)
+0*
+1+
+1,
+06
+07
+08
+19
+0:
+0;
+1<
+1=
+0>
+0?
+0@
+0A
+0!
+0"
+0#
+0$
+$end
+#10000
+1'
+0(
+09
+18
+1J
+0F
+1V
+0T
+1L
+1G
+0K
+0L
+1@
+1?
+1#
+1"
+0?
+0"
+#20000
+1(
+1*
+0+
+0,
+19
+0=
+0<
+1;
+1H
+0E
+0D
+1F
+0V
+1X
+1W
+0U
+1I
+0G
+1K
+0Z
+1L
+1A
+0L
+1$
+0@
+0#
+1?
+0?
+1"
+0"
+#30000
+0(
+0'
+1&
+09
+08
+17
+1M
+0J
+0F
+1V
+1T
+0R
+0Q
+1L
+0P
+1G
+0K
+1[
+0L
+1Q
+0[
+1@
+1?
+1>
+1#
+1"
+0?
+1!
+0>
+0"
+0!
+#40000

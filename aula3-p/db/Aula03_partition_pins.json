@@ -1,0 +1,85 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LEDR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PTS_CTRL[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PTS_CTRL[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PTS_CTRL[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PTS_CTRL[8]",
+					"strict" : false
+				},
+				{
+					"name" : "PTS_CTRL[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PTS_CTRL[10]",
+					"strict" : false
+				},
+				{
+					"name" : "PTS_CTRL[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PTS_CTRL[12]",
+					"strict" : false
+				},
+				{
+					"name" : "FPGA_RESET_N",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

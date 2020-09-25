@@ -1,0 +1,42 @@
+--leonardo é idiota
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;           -- Biblioteca IEEE para funções aritméticas
+
+entity aula2 is
+    port(
+        SW  : in std_logic_vector(9 downto 0);
+        KEY : in std_logic_vector(3 downto 0);
+        LEDR : OUT std_logic_vector(9 downto 0)
+
+);
+
+end entity
+
+architecture arch of aula2 is
+
+    component registradorGenerico is
+        port(
+            DIN: in std_logic_vector(9 downto 0);
+            DOUT: out std_logic_vector(9 downto 0);
+            ENABLE: in std_logic;
+            CLK, RST: in std_logic
+            
+        );
+    end component; 
+
+
+begin
+    
+    pm1: registradorGenerico port map (
+        DIN => SW(9 downto 6),
+        DOUT => LEDR std_logic_vector(9 downto 0),
+        ENABLE => KEY(0),
+        CLK => CLK,
+        RST => KEY(1)
+
+    );
+
+
+
+end architecture
